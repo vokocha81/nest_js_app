@@ -17,7 +17,7 @@ pipeline {
         stage("connect to deploy server"){
 
             environment { 
-                SSH_CRED = credentials('freemium')
+                SSH_CRED = credentials('freemium.pem')
             }
 
             steps {
